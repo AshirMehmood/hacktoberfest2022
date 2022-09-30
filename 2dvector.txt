@@ -1,0 +1,31 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+   int n,e,q;
+   cin>>n>>q;
+  vector<vector<int>> Main_array;
+   for(int i=0;i<n;i++){
+    vector<int>arr2;
+    int l;
+    cin>>l;
+ for(int j=0;j<l;j++){
+     cin>>e; 
+     arr2.push_back(e);
+       }
+        Main_array.push_back(arr2);
+       
+   }
+  for(int i=0;i<q;i++){
+        int sublength,main_index;
+        cin>>main_index>>sublength;
+        cout<<Main_array[main_index][sublength]<<endl;
+       
+   }
+    return 0;
+}
